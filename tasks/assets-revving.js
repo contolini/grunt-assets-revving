@@ -8,17 +8,17 @@
 
 module.exports = function(grunt) {
 
-	var fs = require('fs'),
-		  async = grunt.util.async;
+  var fs = require('fs'),
+      async = grunt.util.async;
 
-	grunt.registerMultiTask('rev', 'Assets revving task for Grunt', function() {
+  grunt.registerMultiTask('rev', 'Assets revving task for Grunt', function() {
 
-		var options = this.data,
+    var options = this.data,
         files = grunt.file.expandFiles(options.files),
         found = false,
         time = new Date().getTime();
 
-		async.forEach(files, function(filename, next) {
+    async.forEach(files, function(filename, next) {
 
       var file = grunt.file.expand(filename),
           lines = grunt.file.read(file).split(/\r\n|\r|\n/);
@@ -38,10 +38,10 @@ module.exports = function(grunt) {
         grunt.file.write(filename, file);
       }
 
-			next();
+      next();
 
-		});
+    });
 
-	});
+  });
 
 };

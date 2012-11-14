@@ -24,11 +24,12 @@ module.exports = function(grunt) {
           lines = grunt.file.read(file).split(/\r\n|\r|\n/);
 
       var assetPattern = /(style|script)(.*)['"=]([^?*:;{}\\]+\.(css|js))(\?\d*)?['">]/i,
-          assetFileName = /([^?*:;{}\\]+\.(css|js))(\?\d*)?/;
+          assetFileName = /([^'"=?*:;{}\\]+\.(css|js))(\?\d*)?/;
 
       lines.forEach(function(el, index, array){
         if (el.match(assetPattern) && !el.match("//")) {
           lines[index] = el.replace(assetFileName, "$1?" + time);
+          grunt.log.writeln("Revved " + el.match(assetFileName)[1].yellow + ' in ' + filename.cyan);
           found = true;
         }
       });

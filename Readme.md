@@ -6,7 +6,7 @@ Searches requested files for linked CSS and JS assets, appending a timestamp que
 
 ## Installation
 
-Install this grunt plugin next to your project's [grunt.js gruntfile][getting_started] with:
+Install this grunt plugin next to your project's gruntfile with:
 
 `npm install grunt-assets-revving`
 

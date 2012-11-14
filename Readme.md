@@ -2,7 +2,7 @@
 
 ## Overview
 
-Searches requested files for linked CSS and JS assets, appending a timestamp query string to each asset's URL. Attempts to ignore external resources.
+Grunt.js plugin that searches requested files for linked CSS and JS assets, appending a timestamp query string to each asset's URL. Attempts to ignore external resources.
 
 ## Installation
 

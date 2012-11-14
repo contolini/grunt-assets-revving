@@ -30,7 +30,7 @@ rev: {
     files: [
       'index.html',
       'subdir/index.html'
-    ],
+    ]
   }
 }
 ```

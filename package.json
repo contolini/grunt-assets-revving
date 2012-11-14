@@ -2,7 +2,7 @@
   "name": "grunt-assets-revving",
   "description": "Assets revving task for Grunt.",
   "version": "0.0.1",
-  "homepage": "",
+  "homepage": "https://github.com/contolini/grunt-assets-revving",
   "author": {
     "name": "Chris Contolini",
     "url": "http://contolini.com"

@@ -14,7 +14,7 @@ module.exports = function(grunt) {
   grunt.registerMultiTask('rev', 'Assets revving task for Grunt', function() {
 
     var options = this.data,
-        files = grunt.file.expandFiles(options.files),
+        files = this.filesSrc,
         found = false,
         time = new Date().getTime();
 
